@@ -12,18 +12,49 @@ Si ingreso un número que no esté dentro del rango de 0 a 10 mostrar un mensaje
 
 */
 
-const edad = prompt("escribe tu edad");
+const num = parseInt(prompt("escribe una nota del 0 al 10"));
 
-if (!isNaN(edad)) {
-    if (edad >= 18) {
-        document.write(`
-         <p>Felecidades puedes conducir</p>
-        `);
-    } else {
-        document.write(`
-         <p>Lo siento no puedes conducir</p>
-        `);
+if (!isNaN(num) && num <= 10) {
+    switch (num) {
+        case 0:
+            document.write(`
+            Muy deficiente`);
+            break;
+        case 1:
+            document.write(`
+            Muy deficiente`);
+            break;
+        case 2:
+            document.write(`
+            Muy deficiente`);
+            break;
+
+        case 3:
+            document.write("Insuficiente");
+            break;
+        case 4:
+            document.write("Insuficiente");
+            break;
+
+        case 5:
+            document.write("Suficiente");
+            break;
+        case 6:
+            document.write("Suficiente");
+            break;
+        case 7:
+            document.write("Bien");
+            break;
+        case 8:
+            document.write("Notable");
+            break;
+        case 9:
+            document.write("Notable");
+            break;
+
+        default:
+            document.write("Sobresaliente");
     }
 } else {
-    alert(" Escribe un numerog");
+    alert(" Escribe un numero entre 0 y 10");
 }
