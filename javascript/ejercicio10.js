@@ -1,44 +1,12 @@
 /* 
-9- Crea un script que escriba los números del 1 al 500, que indique cuáles
- son múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea
-  horizontal. Por ejemplo :
+10- Realiza un script que pida número de filas y columnas 
+y escriba una tabla. Dentro de cada una de las celdas deberá escribirse 
+un número consecutivo en orden descendente. Si, por ejemplo,
+ la tabla es de 7×5 los números irán del 35 al 1.
 
-1
-2
-3
-4 (Múltiplo de 4)
-5-
-————————————————————-
+Ejercicios con Math
 
-6
-7
-8 (Múltiplo de 4)
-9 (Múltiplo de 9)
-10
 
 */
 
-const numLineasHorizontal = 5;
-let contadorLineas = 0;
-
-for (let i = 1; i <= 500; i++) {
-    let mensaje = i;
-
-    if (i % 4 === 0) {
-        mensaje += " (Múltiplo de 4)";
-    }
-
-    if (i % 9 === 0) {
-        mensaje += " (Múltiplo de 9)";
-    }
-    document.write(mensaje);
-    document.write("</br>");
-
-    contadorLineas++;
-
-    if (contadorLineas === numLineasHorizontal) {
-        document.write("------------------------");
-        document.write("</br>");
-        contadorLineas = 0;
-    }
-}
+/* no se como hacerlo despues seguir */
