@@ -9,4 +9,20 @@ Ejercicios con Math
 
 */
 
-/* no se como hacerlo despues seguir */
+const fila = parseInt(prompt("ingrese numero de fila"));
+const columna = parseInt(prompt("ingrese numero de columna"));
+
+let numeroCelda = fila * columna;
+
+document.write(`<table>  <tbody>`);
+
+for (let indiceFila = 0; indiceFila < fila; indiceFila++) {
+    document.write(`<tr>`);
+    for (let indiceColumnas = 0; indiceColumnas < columna; indiceColumnas++) {
+        document.write(`<td>${numeroCelda}</td>`);
+        numeroCelda--;
+    }
+    document.write(`</tr>`);
+}
+
+document.write(`</tbody></table>`);
